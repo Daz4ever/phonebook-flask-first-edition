@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="row">
+  <div class="col-sm-12">
+    <ul>
+      {% for myphonebook in allentries_list %}
+      <li><a href="#">{{myphonebook.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+    {% endblock %}
